@@ -15,7 +15,7 @@ function App() {
 
 
   const filterTasks = selectedCategory === "All" ? tasks : tasks.filter(task => task.category === selectedCategory);
-  
+  console.log(filterTasks);
 
 function addNewTask(newTask) {
   setTasks([...tasks, newTask])
